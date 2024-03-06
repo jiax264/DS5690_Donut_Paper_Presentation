@@ -17,7 +17,6 @@ The traditional OCR process for VDU is a two-stage process:
 2. **Stage 2:** Modeling the document's holistic understanding.
 
 ![image](https://github.com/jiax264/DS5690_Donut_Paper_Presentation/assets/64748973/1a50a614-17dd-49a4-9df3-f5917826c400)
-
 ### Issues with OCR in VDU:
 - **High Cost:** OCR as pre-processing is computationally expensive.
 - **Inflexibility:** Struggles with language and document-type variations, leading to poor generalization ability.
@@ -32,7 +31,6 @@ The traditional OCR process for VDU is a two-stage process:
 
 ### Donut’s Approach
 ![image](https://github.com/jiax264/DS5690_Donut_Paper_Presentation/assets/64748973/aa8f91ff-c6ac-4f07-8bb8-8f572e90cae1)
-
 Donut uses a visual encoder to interpret the document image and a textual decoder to produce a JSON structured format without relying on OCR. Each model component is Transformer-based, and thus the model is trained easily in an end-to-end manner
 
 ### Gradio Demos
@@ -43,7 +41,6 @@ Donut uses a visual encoder to interpret the document image and a textual decode
 ## Brief Critical Analysis on Results
 
 ![image](https://github.com/jiax264/DS5690_Donut_Paper_Presentation/assets/64748973/0f6692ce-be1a-48c6-b383-c9264b01e220)
-
 While Donut demonstrates the fastest inference time and superior performance across all tested datasets, the lack of error analysis in the paper is a notable omission for further advancements and reliability of the model.
 
 ## Donut Pseudocode
@@ -51,7 +48,6 @@ While Donut demonstrates the fastest inference time and superior performance acr
 
 ### Question 1: What is the input to the encoder?
 ![image](https://github.com/jiax264/DS5690_Donut_Paper_Presentation/assets/64748973/430c70fb-9bf9-4d45-9c2e-21697a3d9c5f)
-
 The process includes flattening 2D patches into 1D arrays and encoding their positions within the image. This allows the Transformer to focus on important patches using the attention mechanism.
 
 ### Question 2: Why use patches and why not flatten the entire image into one long 1D array? 
