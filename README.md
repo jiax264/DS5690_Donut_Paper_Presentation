@@ -2,7 +2,7 @@
 
 ## Background/Motivation
 
-Optical Character Recognition (OCR) is a technology used to convert different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. An example of its application is in the use of Rocketbook for handwritten class notes, which are digitized through OCR. Beyond academic notes, OCR is crucial in business for automating the processing of documents like invoices and receipts, enhancing data entry, archiving, and content management.
+I use a Rocketbook to take handwritten class notes and an app to take pictures of these notes for OCR processing. The OCR software scans, preprocesses, identifies text regions, matches to character patterns, and corrects errors, yielding digital, searchable text. Beyond academic notes, OCR is vital in business for automating the understanding and processing of documents like invoices and receipts, streamlining data entry, archiving, and content management.
 
 ### Common Tasks in Visual Document Understanding (VDU)
 - Document classification
